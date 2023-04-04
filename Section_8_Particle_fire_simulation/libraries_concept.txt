@@ -1,0 +1,9 @@
+Preprocessor: The preprocessors are the directives, which give instructions to the compiler to preprocess the information before actual compilation starts. All preprocessor directives begin with #
+Compilation (.o file): C++ source code files are always compiled (convert) into binary code by a program called a "compiler" and then executed.
+Link (.exe or no suffix file): An executable file (.exe file) is a computer file that contains an encoded sequence of instructions that the system can execute directly when the user clicks the file icon.
+
+Static libraries - actually compiled into your program
+Dynamic libraries - program find code at run time
+
+Static: windows - XYZ.lib; UNIX/Linux/Maz - libXYZ.a
+Dynamic: windows - XYZ.dll; UNIX/Linux/Mac - libXYZ.so or Mac - XYZ.dylib
