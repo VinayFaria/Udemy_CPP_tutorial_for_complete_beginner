@@ -27,7 +27,7 @@ int main(int argv, char** args) {   //
     // SDL_WINDOWPOS_UNDEFINED: x, y position of the window
     // SDL_WindowFlags: An enumeration of window states.
     SDL_Window *window = SDL_CreateWindow("Particle Fire Explosion", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-                        SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOWEVENT_SHOWN);
+                        SCREEN_WIDTH, SCREEN_HEIGHT, 0); // SDL_WINDOWEVENT_SHOWN flag will make unexpected behavior like fullscreen
 
 
 
