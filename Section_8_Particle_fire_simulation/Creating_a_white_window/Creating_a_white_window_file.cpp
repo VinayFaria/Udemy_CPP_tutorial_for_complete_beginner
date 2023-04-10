@@ -85,6 +85,7 @@ int main() {
         }
     }
 
+    delete [] buffer;   // the delete operator on an object deallocates its memory
     SDL_DestroyRenderer(renderer);
     SDL_DestroyTexture(texture);
     SDL_DestroyWindow(window);
