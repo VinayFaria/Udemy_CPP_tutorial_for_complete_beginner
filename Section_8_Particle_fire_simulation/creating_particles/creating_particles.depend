@@ -1,9 +1,15 @@
 # depslib dependency file v1.0
-1681819644 source:d:\projects\udemy_cpp_tutorial_for_complete_beginner\section_8_particle_fire_simulation\animating_colors\animating_colors_main.cpp
-	<iostream>
-	<SDL.h>
-	<math.h>
+1681996599 source:d:\projects\udemy_cpp_tutorial_for_complete_beginner\section_8_particle_fire_simulation\creating_particles\particle.cpp
+	<stdlib.h>
+	"particle.h"
+
+1681994910 d:\projects\udemy_cpp_tutorial_for_complete_beginner\section_8_particle_fire_simulation\creating_particles\particle.h
+
+1681994909 source:d:\projects\udemy_cpp_tutorial_for_complete_beginner\section_8_particle_fire_simulation\creating_particles\screen.cpp
 	"screen.h"
+
+1681994907 d:\projects\udemy_cpp_tutorial_for_complete_beginner\section_8_particle_fire_simulation\creating_particles\screen.h
+	<SDL.h>
 
 1680759818 c:\program files\codeblocks\mingw\sdl2-2.26.5\include\sdl.h
 	"SDL_main.h"
@@ -394,9 +400,18 @@
 	"begin_code.h"
 	"close_code.h"
 
-1681818082 d:\projects\udemy_cpp_tutorial_for_complete_beginner\section_8_particle_fire_simulation\animating_colors\screen.h
-	<SDL.h>
+1681990571 source:d:\projects\udemy_cpp_tutorial_for_complete_beginner\section_8_particle_fire_simulation\creating_particles\swarm.cpp
+	"Swarm.h"
 
-1681818084 source:d:\projects\udemy_cpp_tutorial_for_complete_beginner\section_8_particle_fire_simulation\animating_colors\screen.cpp
+1681994905 d:\projects\udemy_cpp_tutorial_for_complete_beginner\section_8_particle_fire_simulation\creating_particles\swarm.h
+	"particle.h"
+
+1681994149 source:d:\projects\udemy_cpp_tutorial_for_complete_beginner\section_8_particle_fire_simulation\creating_particles\creating_particles_main.cpp
+	<iostream>
+	<SDL.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	"swarm.h"
 	"screen.h"
 

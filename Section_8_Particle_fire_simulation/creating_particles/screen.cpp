@@ -35,19 +35,16 @@ namespace screen_processing {
 
         m_buffer = new Uint32[SCREEN_WIDTH*SCREEN_HEIGHT];
 
-        for (int i=0; i<SCREEN_WIDTH*SCREEN_HEIGHT; i++) {
-            m_buffer[i] = 0x00FFFFFF;
-        }
-
-        SDL_UpdateTexture(m_texture, NULL, m_buffer, SCREEN_WIDTH*sizeof(Uint32));
-        SDL_RenderClear(m_renderer);
-        SDL_RenderCopy(m_renderer, m_texture, NULL, NULL);
-        SDL_RenderPresent(m_renderer);
+        memset(m_buffer, 0, SCREEN_WIDTH*SCREEN_HEIGHT*sizeof(Uint32));
 
         return true;
     }
 
     void Screen::setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue) {
+        if(x<0 || x>=SCREEN_WIDTH || y<0 || y>=SCREEN_HEIGHT) {
+            return;
+        }
+
         Uint32 color = 0;
 
         // Let’s take a=128; which is 10000000 in Binary Form.

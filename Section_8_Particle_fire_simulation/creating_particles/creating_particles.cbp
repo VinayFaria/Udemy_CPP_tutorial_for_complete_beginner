@@ -30,7 +30,14 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="C:/Program Files/CodeBlocks/MinGW/SDL2-2.26.5/include" />
 		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDL2main" />
+			<Add library="SDL2" />
+			<Add directory="C:/Program Files/CodeBlocks/MinGW/SDL2-2.26.5/lib/x64" />
+		</Linker>
 		<Unit filename="creating_particles_main.cpp" />
 		<Unit filename="particle.cpp" />
 		<Unit filename="particle.h" />
